@@ -1,0 +1,92 @@
+*   {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    background-image: linear-gradient(to top,   rgba(80, 79, 79, 0.555), rgba(80, 79, 79, 0.555)), url("bg1.webp");
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: rgb(245, 245, 245);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    width: 50%;
+    position: absolute;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1000px) {
+    .flex-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .avatar {
+        width: 150px;
+        margin-left: 30px;
+        margin-bottom: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+
+.desc   {
+    padding: 0 0 0 30px;
+}
+
+h2  {
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+    padding-bottom: 10px;
+}
+
+p   {
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.fa {
+    margin: 22px 7px 0 0;
+    padding-right: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+}
+
+.fa-instagram   {
+    animation: fadeIn;
+    animation-duration: 4s;
+}
+
+.fa-github  {
+    animation: fadeIn;
+    animation-duration: 4s;
+}
+
+.fa-linkedin  {
+    animation: fadeIn;
+    animation-duration: 4s;
+}
